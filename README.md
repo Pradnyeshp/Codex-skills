@@ -13,6 +13,10 @@ Collection of helpful Codex CLI skills for software development.
 | [Test Gen](/skills/test-gen/SKILL.md) | Generate unit tests for changed code, matching the project's framework and conventions |
 | [Refactor](/skills/refactor/SKILL.md) | Refactor code for clarity without changing behavior, verified by existing tests |
 | [Dockerize](/skills/dockerize/SKILL.md) | Generate a production-ready Dockerfile and .dockerignore for the project |
+| [Debug](/skills/debug/SKILL.md) | Systematically diagnose and fix an error, stack trace, or failing test by root cause |
+| [Explain](/skills/explain/SKILL.md) | Explain unfamiliar code or a codebase area in plain language for onboarding |
+| [Doc Gen](/skills/doc-gen/SKILL.md) | Add docstrings and inline documentation matching the language's conventions |
+| [Dependency Audit](/skills/dependency-audit/SKILL.md) | Audit dependencies for outdated and known-vulnerable packages and recommend updates |
 
 ## Installation
 
@@ -45,6 +49,10 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > generate tests for the files I changed
 > refactor this function without changing its behavior
 > write a Dockerfile for this project
+> debug this stack trace and fix the root cause
+> explain how the auth module works
+> add docstrings to this file
+> audit my dependencies for vulnerabilities
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -68,6 +76,14 @@ skills/
   refactor/
     SKILL.md
   dockerize/
+    SKILL.md
+  debug/
+    SKILL.md
+  explain/
+    SKILL.md
+  doc-gen/
+    SKILL.md
+  dependency-audit/
     SKILL.md
 ```
 
