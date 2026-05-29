@@ -5,10 +5,14 @@ Collection of helpful Codex CLI skills for software development.
 ## Skills
 
 | Skill | Description |
-|-------|-------------|
+| ----- | ----------- |
 | [Commit Message](/skills/commit-message/SKILL.md) | Generate conventional commit messages from staged changes |
 | [PR Description](/skills/pr-description/SKILL.md) | Generate PR title and description from branch diff |
 | [Changelog](/skills/changelog/SKILL.md) | Generate changelog entries from recent commits |
+| [Code Review](/skills/code-review/SKILL.md) | Review the branch diff for bugs, security issues, and quality problems with severity ratings |
+| [Test Gen](/skills/test-gen/SKILL.md) | Generate unit tests for changed code, matching the project's framework and conventions |
+| [Refactor](/skills/refactor/SKILL.md) | Refactor code for clarity without changing behavior, verified by existing tests |
+| [Dockerize](/skills/dockerize/SKILL.md) | Generate a production-ready Dockerfile and .dockerignore for the project |
 
 ## Installation
 
@@ -33,10 +37,14 @@ cp -r skills/* ~/.codex/skills/
 
 Codex automatically discovers skills at startup. Once installed, you can ask Codex to use them:
 
-```
+```text
 > generate a commit message for my staged changes
 > write a PR description for this branch
 > generate changelog for version 2.1.0
+> review my branch changes for bugs and security issues
+> generate tests for the files I changed
+> refactor this function without changing its behavior
+> write a Dockerfile for this project
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -45,13 +53,21 @@ Codex will find the matching skill and follow its instructions.
 
 Each skill is a `SKILL.md` file inside a named folder with YAML frontmatter (`name` and `description`) and markdown instructions.
 
-```
+```text
 skills/
   commit-message/
     SKILL.md
   pr-description/
     SKILL.md
   changelog/
+    SKILL.md
+  code-review/
+    SKILL.md
+  test-gen/
+    SKILL.md
+  refactor/
+    SKILL.md
+  dockerize/
     SKILL.md
 ```
 
