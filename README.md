@@ -17,6 +17,12 @@ Collection of helpful Codex CLI skills for software development.
 | [Explain](/skills/explain/SKILL.md) | Explain unfamiliar code or a codebase area in plain language for onboarding |
 | [Doc Gen](/skills/doc-gen/SKILL.md) | Add docstrings and inline documentation matching the language's conventions |
 | [Dependency Audit](/skills/dependency-audit/SKILL.md) | Audit dependencies for outdated and known-vulnerable packages and recommend updates |
+| [Optimize](/skills/optimize/SKILL.md) | Profile a slow path, find the real bottleneck with measurements, and apply a verified performance fix |
+| [API Design](/skills/api-design/SKILL.md) | Design REST/GraphQL endpoints — paths, schemas, status codes, and errors — following project conventions |
+| [Lint Fix](/skills/lint-fix/SKILL.md) | Run the project's linters and formatters and fix the reported issues without changing behavior |
+| [Type Annotate](/skills/type-annotate/SKILL.md) | Add or improve static type annotations and verify with the type checker |
+| [Scaffold](/skills/scaffold/SKILL.md) | Scaffold a new component, module, or feature with boilerplate, tests, and wiring matching the codebase |
+| [Release](/skills/release/SKILL.md) | Cut a versioned release — determine the bump, update version files and changelog, and tag it |
 
 ## Installation
 
@@ -53,6 +59,12 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > explain how the auth module works
 > add docstrings to this file
 > audit my dependencies for vulnerabilities
+> profile this endpoint and make it faster
+> design a REST API for managing orders
+> run the linters and fix the issues
+> add type annotations to this module
+> scaffold a new settings component
+> cut a new minor release
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -84,6 +96,18 @@ skills/
   doc-gen/
     SKILL.md
   dependency-audit/
+    SKILL.md
+  optimize/
+    SKILL.md
+  api-design/
+    SKILL.md
+  lint-fix/
+    SKILL.md
+  type-annotate/
+    SKILL.md
+  scaffold/
+    SKILL.md
+  release/
     SKILL.md
 ```
 
