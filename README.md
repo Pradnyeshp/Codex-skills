@@ -23,6 +23,12 @@ Collection of helpful Codex CLI skills for software development.
 | [Type Annotate](/skills/type-annotate/SKILL.md) | Add or improve static type annotations and verify with the type checker |
 | [Scaffold](/skills/scaffold/SKILL.md) | Scaffold a new component, module, or feature with boilerplate, tests, and wiring matching the codebase |
 | [Release](/skills/release/SKILL.md) | Cut a versioned release — determine the bump, update version files and changelog, and tag it |
+| [Migrate](/skills/migrate/SKILL.md) | Write a safe, reversible database schema or data migration following the project's migration tool |
+| [CI Setup](/skills/ci-setup/SKILL.md) | Generate or improve a CI pipeline that installs, lints, tests, and builds the project |
+| [Accessibility](/skills/accessibility/SKILL.md) | Audit UI code for a11y issues against WCAG and suggest concrete fixes |
+| [Logging](/skills/logging/SKILL.md) | Add structured, leveled logging and basic observability using the project's logging library |
+| [Git Bisect](/skills/git-bisect/SKILL.md) | Find the exact commit that introduced a regression using git bisect with a reliable test |
+| [Env Setup](/skills/env-setup/SKILL.md) | Produce a reproducible developer setup and getting-started guide for new contributors |
 
 ## Installation
 
@@ -65,6 +71,12 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > add type annotations to this module
 > scaffold a new settings component
 > cut a new minor release
+> write a migration to add an index to the orders table
+> set up a GitHub Actions pipeline for this project
+> audit this page for accessibility issues
+> add structured logging to the payment flow
+> find the commit that broke the login test
+> write getting-started setup docs for new contributors
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -108,6 +120,18 @@ skills/
   scaffold/
     SKILL.md
   release/
+    SKILL.md
+  migrate/
+    SKILL.md
+  ci-setup/
+    SKILL.md
+  accessibility/
+    SKILL.md
+  logging/
+    SKILL.md
+  git-bisect/
+    SKILL.md
+  env-setup/
     SKILL.md
 ```
 
