@@ -29,6 +29,11 @@ Collection of helpful Codex CLI skills for software development.
 | [Logging](/skills/logging/SKILL.md) | Add structured, leveled logging and basic observability using the project's logging library |
 | [Git Bisect](/skills/git-bisect/SKILL.md) | Find the exact commit that introduced a regression using git bisect with a reliable test |
 | [Env Setup](/skills/env-setup/SKILL.md) | Produce a reproducible developer setup and getting-started guide for new contributors |
+| [Readme](/skills/readme/SKILL.md) | Generate or update a clear, accurate project README that helps a newcomer install and use the project |
+| [Secrets Scan](/skills/secrets-scan/SKILL.md) | Scan the codebase and git history for hardcoded secrets and credentials, then remediate and prevent leaks |
+| [Flaky Test](/skills/flaky-test/SKILL.md) | Diagnose and stabilize a flaky or intermittently failing test by finding the real source of nondeterminism |
+| [Dead Code](/skills/dead-code/SKILL.md) | Find and safely remove unused code — dead functions, unreachable branches, unused imports and dependencies |
+| [Error Handling](/skills/error-handling/SKILL.md) | Harden error handling and edge cases — validate inputs, handle failures explicitly, and fail safely |
 
 ## Installation
 
@@ -77,6 +82,11 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > add structured logging to the payment flow
 > find the commit that broke the login test
 > write getting-started setup docs for new contributors
+> write a README for this project
+> scan the repo for hardcoded secrets and credentials
+> figure out why this test is flaky and fix it
+> find and remove dead code in this module
+> harden the error handling in this function
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -132,6 +142,16 @@ skills/
   git-bisect/
     SKILL.md
   env-setup/
+    SKILL.md
+  readme/
+    SKILL.md
+  secrets-scan/
+    SKILL.md
+  flaky-test/
+    SKILL.md
+  dead-code/
+    SKILL.md
+  error-handling/
     SKILL.md
 ```
 
