@@ -34,6 +34,7 @@ Collection of helpful Codex CLI skills for software development.
 | [Flaky Test](/skills/flaky-test/SKILL.md) | Diagnose and stabilize a flaky or intermittently failing test by finding the real source of nondeterminism |
 | [Dead Code](/skills/dead-code/SKILL.md) | Find and safely remove unused code — dead functions, unreachable branches, unused imports and dependencies |
 | [Error Handling](/skills/error-handling/SKILL.md) | Harden error handling and edge cases — validate inputs, handle failures explicitly, and fail safely |
+| [Pre-Commit](/skills/pre-commit/SKILL.md) | Set up fast git pre-commit hooks that lint, format, and scan for secrets, matching the project's tooling |
 
 ## Installation
 
@@ -87,6 +88,7 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > figure out why this test is flaky and fix it
 > find and remove dead code in this module
 > harden the error handling in this function
+> set up pre-commit hooks to lint and scan for secrets
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -152,6 +154,8 @@ skills/
   dead-code/
     SKILL.md
   error-handling/
+    SKILL.md
+  pre-commit/
     SKILL.md
 ```
 
