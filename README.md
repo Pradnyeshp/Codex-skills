@@ -35,6 +35,10 @@ Collection of helpful Codex CLI skills for software development.
 | [Dead Code](/skills/dead-code/SKILL.md) | Find and safely remove unused code — dead functions, unreachable branches, unused imports and dependencies |
 | [Error Handling](/skills/error-handling/SKILL.md) | Harden error handling and edge cases — validate inputs, handle failures explicitly, and fail safely |
 | [Pre-Commit](/skills/pre-commit/SKILL.md) | Set up fast git pre-commit hooks that lint, format, and scan for secrets, matching the project's tooling |
+| [Benchmark](/skills/benchmark/SKILL.md) | Write and run reproducible performance benchmarks with stable, statistically meaningful measurements |
+| [Feature Flag](/skills/feature-flag/SKILL.md) | Gate functionality behind feature flags for safe rollout, with a plan to remove the flag later |
+| [i18n](/skills/i18n/SKILL.md) | Extract hardcoded strings and wire up internationalization and localization using the project's i18n library |
+| [Monorepo](/skills/monorepo/SKILL.md) | Manage a monorepo — workspaces, shared config, affected-only builds and tests, and clean dependency boundaries |
 
 ## Installation
 
@@ -89,6 +93,10 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > find and remove dead code in this module
 > harden the error handling in this function
 > set up pre-commit hooks to lint and scan for secrets
+> write a reproducible benchmark for this function
+> put this new behavior behind a feature flag
+> extract the hardcoded strings in this page for translation
+> run tests only for the packages affected by my change
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -156,6 +164,14 @@ skills/
   error-handling/
     SKILL.md
   pre-commit/
+    SKILL.md
+  benchmark/
+    SKILL.md
+  feature-flag/
+    SKILL.md
+  i18n/
+    SKILL.md
+  monorepo/
     SKILL.md
 ```
 
