@@ -39,6 +39,7 @@ Collection of helpful Codex CLI skills for software development.
 | [Feature Flag](/skills/feature-flag/SKILL.md) | Gate functionality behind feature flags for safe rollout, with a plan to remove the flag later |
 | [i18n](/skills/i18n/SKILL.md) | Extract hardcoded strings and wire up internationalization and localization using the project's i18n library |
 | [Monorepo](/skills/monorepo/SKILL.md) | Manage a monorepo — workspaces, shared config, affected-only builds and tests, and clean dependency boundaries |
+| [Caching](/skills/caching/SKILL.md) | Add or improve caching safely — pick the right layer and key, set TTL and invalidation, and verify hit rate |
 
 ## Installation
 
@@ -97,6 +98,7 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > put this new behavior behind a feature flag
 > extract the hardcoded strings in this page for translation
 > run tests only for the packages affected by my change
+> add caching to this expensive query with proper invalidation
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -172,6 +174,8 @@ skills/
   i18n/
     SKILL.md
   monorepo/
+    SKILL.md
+  caching/
     SKILL.md
 ```
 
