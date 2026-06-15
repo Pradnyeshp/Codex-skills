@@ -40,6 +40,7 @@ Collection of helpful Codex CLI skills for software development.
 | [i18n](/skills/i18n/SKILL.md) | Extract hardcoded strings and wire up internationalization and localization using the project's i18n library |
 | [Monorepo](/skills/monorepo/SKILL.md) | Manage a monorepo — workspaces, shared config, affected-only builds and tests, and clean dependency boundaries |
 | [Caching](/skills/caching/SKILL.md) | Add or improve caching safely — pick the right layer and key, set TTL and invalidation, and verify hit rate |
+| [Observability](/skills/observability/SKILL.md) | Add metrics, tracing, and actionable alerts so a service's health and behavior are visible in production |
 
 ## Installation
 
@@ -99,6 +100,7 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > extract the hardcoded strings in this page for translation
 > run tests only for the packages affected by my change
 > add caching to this expensive query with proper invalidation
+> add metrics and tracing to this service with alerts on errors
 ```
 
 Codex will find the matching skill and follow its instructions.
@@ -176,6 +178,8 @@ skills/
   monorepo/
     SKILL.md
   caching/
+    SKILL.md
+  observability/
     SKILL.md
 ```
 
