@@ -42,6 +42,7 @@ Collection of helpful Codex CLI skills for software development.
 | [Caching](/skills/caching/SKILL.md) | Add or improve caching safely — pick the right layer and key, set TTL and invalidation, and verify hit rate |
 | [Observability](/skills/observability/SKILL.md) | Add metrics, tracing, and actionable alerts so a service's health and behavior are visible in production |
 | [Rate Limiting](/skills/rate-limiting/SKILL.md) | Protect a service with rate limiting and throttling — pick the algorithm and scope, set limits, return correct headers, and fail safely |
+| [Config Management](/skills/config-management/SKILL.md) | Structure application configuration safely — layer sources, validate at startup, keep secrets out of code, and document every setting |
 
 ## Installation
 
@@ -103,6 +104,7 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > add caching to this expensive query with proper invalidation
 > add metrics and tracing to this service with alerts on errors
 > add rate limiting to the login endpoint to stop brute-force attempts
+> move these hardcoded settings into validated config with an example file
 ```
 
 Codex will find the matching skill and follow its instructions.
