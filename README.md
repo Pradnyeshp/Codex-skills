@@ -44,6 +44,7 @@ Collection of helpful Codex CLI skills for software development.
 | [Rate Limiting](/skills/rate-limiting/SKILL.md) | Protect a service with rate limiting and throttling — pick the algorithm and scope, set limits, return correct headers, and fail safely |
 | [Config Management](/skills/config-management/SKILL.md) | Structure application configuration safely — layer sources, validate at startup, keep secrets out of code, and document every setting |
 | [Deployment](/skills/deployment/SKILL.md) | Ship a build to production safely — pick a rollout strategy, gate on health, sequence migrations, and have a fast, tested rollback |
+| [Incident Response](/skills/incident-response/SKILL.md) | Drive a production incident to resolution — stabilize first, communicate, find root cause, then write a blameless postmortem with follow-ups |
 
 ## Installation
 
@@ -107,6 +108,7 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > add rate limiting to the login endpoint to stop brute-force attempts
 > move these hardcoded settings into validated config with an example file
 > plan a safe canary deploy for this release with a rollback path
+> walk me through responding to this outage and draft a postmortem
 ```
 
 Codex will find the matching skill and follow its instructions.
