@@ -46,6 +46,7 @@ Collection of helpful Codex CLI skills for software development.
 | [Deployment](/skills/deployment/SKILL.md) | Ship a build to production safely — pick a rollout strategy, gate on health, sequence migrations, and have a fast, tested rollback |
 | [Incident Response](/skills/incident-response/SKILL.md) | Drive a production incident to resolution — stabilize first, communicate, find root cause, then write a blameless postmortem with follow-ups |
 | [Webhooks](/skills/webhooks/SKILL.md) | Build reliable webhook senders and receivers — verify signatures, process idempotently, respond fast, and retry with backoff |
+| [Auth](/skills/auth/SKILL.md) | Implement authentication and authorization safely — verify identity, manage sessions and tokens, store credentials securely, and enforce least-privilege access checks |
 
 ## Installation
 
@@ -111,6 +112,7 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > plan a safe canary deploy for this release with a rollback path
 > walk me through responding to this outage and draft a postmortem
 > add a webhook receiver that verifies signatures and dedupes events
+> add login with secure password hashing and per-request authorization checks
 ```
 
 Codex will find the matching skill and follow its instructions.
