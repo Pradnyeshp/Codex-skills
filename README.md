@@ -47,6 +47,9 @@ Collection of helpful Codex CLI skills for software development.
 | [Incident Response](/skills/incident-response/SKILL.md) | Drive a production incident to resolution — stabilize first, communicate, find root cause, then write a blameless postmortem with follow-ups |
 | [Webhooks](/skills/webhooks/SKILL.md) | Build reliable webhook senders and receivers — verify signatures, process idempotently, respond fast, and retry with backoff |
 | [Auth](/skills/auth/SKILL.md) | Implement authentication and authorization safely — verify identity, manage sessions and tokens, store credentials securely, and enforce least-privilege access checks |
+| [Background Jobs](/skills/background-jobs/SKILL.md) | Run work asynchronously with a job queue — enqueue reliably, process idempotently, retry with backoff, dead-letter failures, and make jobs observable |
+| [Graceful Shutdown](/skills/graceful-shutdown/SKILL.md) | Shut a service down cleanly — catch termination signals, stop taking new work, drain in-flight requests and jobs, close resources, and exit within the deadline |
+| [Data Validation](/skills/data-validation/SKILL.md) | Validate and sanitize input at trust boundaries — define a schema, fail closed with clear errors, normalize data, and never trust client-supplied values |
 
 ## Installation
 
@@ -113,6 +116,9 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > walk me through responding to this outage and draft a postmortem
 > add a webhook receiver that verifies signatures and dedupes events
 > add login with secure password hashing and per-request authorization checks
+> move this slow work into a background job with retries and a dead-letter queue
+> add graceful shutdown so deploys drain in-flight requests instead of dropping them
+> validate and sanitize the request body against a schema before processing
 ```
 
 Codex will find the matching skill and follow its instructions.
