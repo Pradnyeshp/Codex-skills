@@ -50,6 +50,9 @@ Collection of helpful Codex CLI skills for software development.
 | [Background Jobs](/skills/background-jobs/SKILL.md) | Run work asynchronously with a job queue — enqueue reliably, process idempotently, retry with backoff, dead-letter failures, and make jobs observable |
 | [Graceful Shutdown](/skills/graceful-shutdown/SKILL.md) | Shut a service down cleanly — catch termination signals, stop taking new work, drain in-flight requests and jobs, close resources, and exit within the deadline |
 | [Data Validation](/skills/data-validation/SKILL.md) | Validate and sanitize input at trust boundaries — define a schema, fail closed with clear errors, normalize data, and never trust client-supplied values |
+| [Pagination](/skills/pagination/SKILL.md) | Page through large result sets safely — choose cursor vs. offset, keep ordering stable, cap page size, and return consistent next/prev metadata |
+| [Idempotency](/skills/idempotency/SKILL.md) | Make write operations safe to retry — accept idempotency keys, dedupe on a stored result, handle concurrent retries, and keep effects exactly-once |
+| [Audit Log](/skills/audit-log/SKILL.md) | Record who did what, when, and to what — append-only, tamper-evident audit trails for security-sensitive actions, without logging secrets |
 
 ## Installation
 
@@ -119,6 +122,9 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > move this slow work into a background job with retries and a dead-letter queue
 > add graceful shutdown so deploys drain in-flight requests instead of dropping them
 > validate and sanitize the request body against a schema before processing
+> switch this endpoint to cursor-based pagination with a capped page size
+> make this payment endpoint safe to retry with an idempotency key
+> add an append-only audit log for permission changes and deletions
 ```
 
 Codex will find the matching skill and follow its instructions.
