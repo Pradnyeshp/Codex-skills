@@ -53,6 +53,8 @@ Collection of helpful Codex CLI skills for software development.
 | [Pagination](/skills/pagination/SKILL.md) | Page through large result sets safely — choose cursor vs. offset, keep ordering stable, cap page size, and return consistent next/prev metadata |
 | [Idempotency](/skills/idempotency/SKILL.md) | Make write operations safe to retry — accept idempotency keys, dedupe on a stored result, handle concurrent retries, and keep effects exactly-once |
 | [Audit Log](/skills/audit-log/SKILL.md) | Record who did what, when, and to what — append-only, tamper-evident audit trails for security-sensitive actions, without logging secrets |
+| [Search](/skills/search/SKILL.md) | Add full-text or filtered search — pick the right engine, index the right fields, rank by relevance, and paginate results without leaking unauthorized data |
+| [Notifications](/skills/notifications/SKILL.md) | Send transactional notifications reliably — pick channels, template safely, send async with retries, respect user preferences and opt-out, and avoid duplicates |
 
 ## Installation
 
@@ -125,6 +127,8 @@ Codex automatically discovers skills at startup. Once installed, you can ask Cod
 > switch this endpoint to cursor-based pagination with a capped page size
 > make this payment endpoint safe to retry with an idempotency key
 > add an append-only audit log for permission changes and deletions
+> add relevance-ranked full-text search over the products table with access filtering
+> send a transactional email async with retries and respect user opt-out
 ```
 
 Codex will find the matching skill and follow its instructions.
